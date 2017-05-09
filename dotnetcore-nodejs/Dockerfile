@@ -1,5 +1,4 @@
-FROM microsoft/dotnet:1-sdk-msbuild
-MAINTAINER Filiosoft Team <team@filiosoft.com>
+FROM microsoft/aspnetcore:1.1
 
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 RUN echo "deb [arch=amd64] https://apt-mo.trafficmanager.net/repos/azure-cli/ wheezy main" | tee /etc/apt/sources.list.d/azure-cli.list && \
